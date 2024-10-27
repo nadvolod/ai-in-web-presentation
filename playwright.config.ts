@@ -11,4 +11,8 @@ export default defineConfig({
       testMatch: /.*\.spec\.ts/,
     },
   ],
+  reporter: [
+    ["json", { outputFile: "test-results/results.json" }],
+    ["html", { outputFolder: "test-results/html" }],
+  ],
 });
